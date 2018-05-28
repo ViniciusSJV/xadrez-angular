@@ -29,15 +29,15 @@ export class TabuleiroComponent implements OnInit {
       });
     }
 
-    clickTabuleiro( posicao: string, type: PecaType, classPosicao: string ) {
+    clickTabuleiro( posicao: string ) {
       if ( this.posicaoSelecionada ) {
         this.mover(posicao);
       } else {
-        this.select(posicao, type);
+        this.select(posicao);
       }
     }
 
-    select ( posicao: string, type: PecaType ) {
+    select ( posicao: string ) {
       this.xadrezService.getPosicao(posicao).subscribe(
         data => {
           this.posicaoSelecionada = data;
