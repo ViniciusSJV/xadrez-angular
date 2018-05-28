@@ -2,7 +2,7 @@
   <div id="tabuleiro">
     <div class="row" *ngFor="let row of rows" id="{{ row.id }}">
         <div *ngFor="let posicao of row.posicoes" id="{{ posicao.posicao }}" class="{{ posicao.class }}"
-             (click)="clickTabuleiro(posicao.posicao, posicao.type, posicao.class);" [innerHTML]="posicao.peca"></div>
+             (click)="clickTabuleiro(posicao.posicao);" [innerHTML]="posicao.peca"></div>
     </div>
   </div>
 </div>
