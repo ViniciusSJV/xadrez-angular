@@ -1,0 +1,31 @@
+.alert {
+  width: 99%;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #FF9800;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
